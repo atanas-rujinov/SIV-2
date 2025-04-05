@@ -1,8 +1,8 @@
-# VIS-2 Automated Debt Collection System
+# SIV-2 Automated Debt Collection System
 
 ## Overview
 
-VIS-2 is an automated debt collection system that uses AI-powered voice calls to contact clients with overdue credit payments. The system combines a web administration panel and an automated calling agent that uses natural language processing to have persuasive conversations with debtors in Bulgarian.
+SIV-2 is an automated debt collection system that uses AI-powered voice calls to contact clients with overdue credit payments. The system combines a web administration panel and an automated calling agent that uses natural language processing to have persuasive conversations with debtors in Bulgarian.
 
 ## Key Features
 
@@ -51,11 +51,6 @@ The system consists of two main components:
 ## Installation and Setup
 
 ### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/vis2.git
-cd vis2
-```
 
 ### 2. Create Conda Environment
 
@@ -128,7 +123,7 @@ The web application will be available at `http://localhost:5000`.
 
 The agent's behavior is defined in `agent/instructions1.txt`. You can modify this file to change how the agent interacts with debtors. The current configuration makes the agent:
 
-- Introduce itself as Vasil Iliev from VIS-2
+- Introduce itself as Iliya Vasilev from SIV-2
 - Be persistent about collecting the debt
 - Explain the current credit situation and consequences of non-payment
 - Offer payment options
@@ -157,9 +152,6 @@ Before deploying this system:
 - Verify compliance with privacy regulations (GDPR, CCPA, etc.)
 - Consider legal requirements around call recording and disclosure
 - Review terms of service for all third-party APIs used
-
-## Troubleshooting
-
 - **Call not connecting**: Verify Twilio credentials and check that your public URL is accessible
 - **Voice synthesis issues**: Check ElevenLabs API key and voice ID
 - **Agent not responding properly**: Review Azure OpenAI configuration and ensure the model is available
